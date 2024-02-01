@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external  -->
+    <link rel="stylesheet" href="style.css" class="css">
+    <!-- bootstrab link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- aos  css cdn animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body >
+    <!-- basic layou of calci -->
+    <div class="container-fluid   my-5 p-3" data-aos="fade-down">
+        <h1 class="text-center mb-3">simple <san class="text-primary">calculator</san></h1>
+        <div class=" inputvalues cards shadow p-3 mb-5 bg-body-tertiary rounded  bg-info">
+            <div class="row g=0 my-3 p-3">
+                  <div class=" col-md-4">
+                     <input type="text" id="val1" placeholder="enter value1"  class="form-control">
+                 </div>
+                  <div class=" col-md-4">
+                        <input type="text" id="val2" placeholder="enter value2"  class="form-control">
+                 </div>
+                  <div class="col-md-2">
+                        <select name="" id="operator"class="form-select">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                            <option value="%">%</option>
+                            <option value="**">**</option>
+                     </select>
+                </div>
+                  <div class="col-md-2">
+                        <button class="btn btn-primary "   class="form-control" onclick="Calculator()">=</button>
+                   </div>
+                   <div class="result my-3">
+                    <input type="text" id="res" readonly class="form-control text-center">
+            
+                 </div>
+          </div>
+     
+    </div>
+
+ </div>
+
+</div>
+        
+       
+<!-- external js -->
+<script src="script.js"></script>
+
+</body><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- AOS  script js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
